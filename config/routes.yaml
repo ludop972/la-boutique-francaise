@@ -5,3 +5,16 @@ controllers:
 kernel:
     resource: ../src/Kernel.php
     type: annotation
+
+blog_index:
+    path: /
+    controller: App\Controller\HomeController.php::index
+
+blog_inscription:
+    path: /inscription
+    controller: App\Controller\RegisterController.php::show
+
+blog_connexion:
+    path: /connexion
+    controller: App\Controller\SecurityController.php::show
+

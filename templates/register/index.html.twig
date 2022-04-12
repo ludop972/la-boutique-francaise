@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<h1> Inscription </h1>
+    {% if notification_success %} {# Si la variable notification est présente dans le controlleur associée#}
+        <div class="alert alert-info">{{ notification_success }}</div> {# on affiche la variable notification a la vue twig #}
+        <hr>
+    {% endif %}
+    {% if notification_error %}
+        <div class="alert alert-danger">{{ notification_error }}</div> {# on affiche la variable notification a la vue twig #}
+        <hr>
+    {% endif %}
+
+    {{ form(form) }} {# création d'un formulaire grâce a la méthode symfony/twig form et (form) est la variable créé dans RegisterController.php #}
+
+{% endblock %}
