@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="La boutique qui vend uniquement du Made In France">
-    <link rel="icon" type="image/png" href="{{ asset('assets/img/France_29740.png') }}" />
+    <link rel="icon" type="image/png" href="{{ 'assets/img/France_29740.png'}}" />
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
     <title>{% block title %}La boutique Française - 100% Made In France{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ '/assets/css/bootstrap.min.css' }}" rel="stylesheet">
-    <link href="{{asset('/assets/css/boutiquefrancaise.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ '/assets/css/boutiquefrancaise.css'}}" rel="stylesheet" type="text/css">
 
     {% block javascript %}
 
@@ -62,7 +62,7 @@
                     <a href="{{ path('app_login') }}">Connexion</a> | <a href="{{ path('app_register') }}">Inscription</a>
                 {% endif %}
             </div>
-                <a href="{{ path('app_cart') }}"><img src="{{ asset('assets/img/shopping-cart.png') }}" alt="Votre panier" class="pl-4" height="23px"></a>
+                <a href="{{ path('app_cart') }}"><img src="{{ 'assets/img/shopping-cart.png' }}" alt="Votre panier" class="pl-4" height="23px"></a>
         </div>
     </nav>
 </header>

@@ -31,18 +31,18 @@
             </td>
             <td>
                 <a href="{{ path('decrease_to_cart', {'id' : product.product.id}) }}">
-                    <img src="{{ asset('assets/img/minus-sign.png') }}" alt="diminuer quantité" height="12px">
+                    <img src="{{ 'assets/img/minus-sign.png' }}" alt="diminuer quantité" height="12px">
                 </a>
                 {{ product.quantity }}
                 <a href="{{ path('add_to_cart',{ 'id': product.product.id }) }}">
-                    <img src="{{ asset('assets/img/plus.png') }}" alt="augmenter quantité" height="12px">
+                    <img src="{{ 'assets/img/plus.png' }}" alt="augmenter quantité" height="12px">
                 </a>
             </td>
             <td>{{ (product.product.prix / 100) | number_format(2, ',') }} €</td>
             <td>{{ ((product.product.prix / 100) * product.quantity) | number_format(2, ',') }}</td>
             <td>
                 <a href="{{ path('delete_to_cart', {'id' : product.product.id}) }}">
-                    <img src="{{ asset('assets/img/trash.png') }}" alt="Supprimer mon article" height="15px">
+                    <img src="{{ 'assets/img/trash.png' }}" alt="Supprimer mon article" height="15px">
                 </a>
             </td>
         </tr>
